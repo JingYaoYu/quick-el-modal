@@ -5,12 +5,12 @@
 
 ## 安装
 ```
-npm i @iamgx/quick-el-modal
+npm i @yizhai/quick-el-modal
 ```
 
 ## 使用
 ```javascript
-import ElQuickModal from '@iamgx/quick-el-modal'
+import ElQuickModal from '@yizhai/quick-el-modal'
 
 // 简单用法
 ElQuickModal({ title: '这是标题', component: '这是内容' })
