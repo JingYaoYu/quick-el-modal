@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    {{ $store.state }}
     <el-button @click="test">测试</el-button>
   </div>
 </template>
@@ -9,11 +10,10 @@ export default {
   name: 'App',
   methods: {
     test() {
-      this.QuickElModalShow({
+      this.quickModal({
         title: '测试标题',
-        component: 'test',
-        componentIsTag: true,
-        showCancelButton: true
+        component: h => h('test'),
+        buttons: [{ text: 'log', callback: 'handleSubmit' }]
       })
     }
   }
